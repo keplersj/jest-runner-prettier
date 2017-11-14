@@ -1,0 +1,23 @@
+{
+  "name": "jest-runner-prettier",
+  "version": "0.1.0",
+  "description": "A prettier runner for Jest",
+  "main": "src/index.js",
+  "repository": "https://github.com/keplersj/jest-runner-prettier",
+  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "create-jest-runner": "^0.1.0",
+    "jest-diff": "^21.2.1",
+    "prettier": "^1.8.2"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "lint": "jest --projects jest-prettier.config.js",
+    "test": "jest",
+    "test:all": "jest --projects jest-*.config.js"
+  }
+}
