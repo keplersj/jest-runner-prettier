@@ -508,14 +508,14 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-create-jest-runner@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.1.0.tgz#ff68a469c99db13f85430286d494a21c50f33edd"
+create-jest-runner@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.1.1.tgz#b4d957f61c391305b1f2ad797e905c655b4dc68c"
   dependencies:
     babel-plugin-istanbul "4.1.4"
     babel-polyfill "^6.26.0"
     babel-register "6.26.0"
-    jest-worker "21.3.0-beta.2"
+    jest-worker "21.3.0-beta.9"
     lodash "4.17.4"
     minimatch "3.0.4"
     mocha "3.5.0"
@@ -1451,9 +1451,9 @@ jest-validate@^21.2.1:
     leven "^2.1.0"
     pretty-format "^21.2.1"
 
-jest-worker@21.3.0-beta.2:
-  version "21.3.0-beta.2"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-21.3.0-beta.2.tgz#05eba2afe4bffffdba6fb0a49016b628382b8234"
+jest-worker@21.3.0-beta.9:
+  version "21.3.0-beta.9"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-21.3.0-beta.9.tgz#0be9bf38ea7e77a22d21d01098e90e0ce8a7867f"
   dependencies:
     merge-stream "^1.0.1"
 
