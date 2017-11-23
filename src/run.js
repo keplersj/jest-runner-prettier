@@ -1,4 +1,5 @@
 const chalk = require("chalk");
+const { highlight } = require("cli-highlight");
 const { pass, fail } = require("create-jest-runner");
 const fs = require("fs");
 const diff = require("jest-diff");
@@ -8,7 +9,7 @@ module.exports = ({ testPath, config, globalConfig }) => {
   const start = new Date();
   const contents = fs.readFileSync(testPath, "utf8");
 
-  const isPretty = prettier.check(contents, {filepath: testPath});
+  const isPretty = prettier.check(contents, { filepath: testPath });
 
   if (isPretty) {
     return pass({
@@ -18,13 +19,16 @@ module.exports = ({ testPath, config, globalConfig }) => {
     });
   }
 
-  const formatted = prettier.format(contents, {filepath: testPath});
+  const formatted = prettier.format(contents, { filepath: testPath });
 
   return fail({
-    start,end: new Date(),
+    start,
+    end: new Date(),
     test: {
       path: testPath,
-      errorMessage: diff(formatted, contents, {expand: false}),
+      errorMessage: diff(highlight(formatted), highlight(contents), {
+        expand: false
+      })
     }
   });
 };

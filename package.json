@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "cli-highlight": "^1.2.0",
     "create-jest-runner": "0.1.1",
     "jest-diff": "^21.2.1",
     "prettier": "^1.8.2"
