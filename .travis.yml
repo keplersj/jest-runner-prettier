@@ -4,6 +4,10 @@ stages:
   - test
   - name: release
     if: branch = master AND type = push AND fork = false
+    
+env:
+  global:
+   - FORCE_COLOR=1
 
 node_js:
   - "node"
