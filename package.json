@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "cli-highlight": "^1.2.0",
+    "cli-highlight": "^1.2.1",
     "create-jest-runner": "0.1.1",
     "jest-diff": "^21.2.1",
     "prettier": "^1.8.2"
@@ -19,6 +19,6 @@
   "scripts": {
     "lint": "jest --projects jest-prettier.config.js",
     "test": "jest",
-    "test:all": "jest --projects jest-*.config.js"
+    "test:all": "jest --projects jest-*.config.js jest.config.js"
   }
 }

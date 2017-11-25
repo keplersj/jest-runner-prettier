@@ -13,5 +13,6 @@ module.exports = {
     "**/*.graphql",
     "**/*.md",
     "**/*.markdown"
-  ]
+  ],
+  testPathIgnorePatterns: ["/node_modules/", "/src/__fixtures__/"]
 };

@@ -446,9 +446,9 @@ ci-info@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.1.tgz#47b44df118c48d2597b56d342e7e25791060171a"
 
-cli-highlight@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-1.2.0.tgz#6aae2bc358a1bd8551042d8ee57a0999517d5244"
+cli-highlight@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-1.2.1.tgz#c8a7cd603e075f7446c75fa60384a6faeab08483"
   dependencies:
     chalk "^2.3.0"
     highlight.js "^9.6.0"

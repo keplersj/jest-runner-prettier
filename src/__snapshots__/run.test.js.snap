@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-runner-prettier JSX bad fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": "[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- [33m[34mfunction[33m HelloWorld({[32m[39m
+[32m- [33m  greeting = [31m\\"hello\\"[33m,[32m[39m
+[32m- [33m  greeted = [31m'\\"World\\"'[33m,[32m[39m
+[32m- [33m  silent = false,[32m[39m
+[32m- [33m  onMouseOver[32m[39m
+[32m- [33m}) [32m{[39m
+[32m-   [34mif[32m (!greeting) {[39m
+[32m-     [34mreturn[32m [34mnull[32m;[39m
+[32m-   }[39m
+[31m+ [33m[34mfunction[33m HelloWorld({greeting = [31m\\"hello\\"[33m, greeted = [31m'\\"World\\"'[33m, silent = false, onMouseOver,}) [31m{[39m
+[2m  [22m
+[32m-   [32m// [32mTODO:[32m Don't use random in render[32m[39m
+[32m-   [34mlet[32m num = [36mMath[32m.floor([36mMath[32m.random() * [32m1e7[32m)[39m
+[32m-     .toString()[39m
+[32m-     .replace([31m/\\\\.\\\\d+/gi[32m, [31m\\"\\"[32m);[39m
+[31m+   [34mif[31m(!greeting){[34mreturn[31m [34mnull[31m};[39m
+[2m  [22m
+[32m-   [34mreturn[32m ([39m
+[32m-     [90m<[34mdiv[90m[32m[39m
+[32m- [90m      [36mclassName[90m=[31m\\"HelloWorld\\"[90m[32m[39m
+[32m- [90m      [36mtitle[90m=[31m{[90m\`[36mYou[90m [36mare[90m [36mvisitor[90m [36mnumber[90m \${[36mnum[90m}\`}[32m[39m
+[32m- [90m      [36monMouseOver[90m=[31m{onMouseOver}[90m[32m[39m
+[32m- [90m    >[32m[39m
+[32m-       [90m<[34mstrong[90m>[32m[39m
+[32m-         {greeting.slice(0, 1).toUpperCase() + greeting.slice(1).toLowerCase()}[39m
+[32m-       [90m</[34mstrong[90m>[32m[39m
+[32m-       {greeting.endsWith(\\",\\") ? ([39m
+[32m-         \\" \\"[39m
+[32m-       ) : ([39m
+[32m-         [90m<[34mspan[90m [36mstyle[90m=[31m{{[90m [36mcolor:[90m \\"[36mgrey[90m\\" }}>[32m\\", \\"[90m</[34mspan[90m>[32m[39m
+[32m-       )}[39m
+[32m-       [90m<[34mem[90m>[32m{greeted}[90m</[34mem[90m>[32m[39m
+[32m-       {silent ? \\".\\" : \\"!\\"}[39m
+[32m-     [90m</[34mdiv[90m>[32m[39m
+[32m-   );[39m
+[31m+      [32m// [32mTODO:[32m Don't use random in render[31m[39m
+[31m+   [34mlet[31m num = [36mMath[31m.floor ([36mMath[31m.random() * [32m1E+7[31m).toString().replace([31m/\\\\.\\\\d+/ig[31m, [31m\\"\\"[31m)[39m
+[31m+ [39m
+[31m+   [34mreturn[31m [90m<[34mdiv[90m [36mclassName[90m=[31m'HelloWorld'[90m [36mtitle[90m=[31m{[90m\`[36mYou[90m [36mare[90m [36mvisitor[90m [36mnumber[90m \${ [36mnum[90m }\`} [36monMouseOver[90m=[31m{onMouseOver}[90m>[31m[39m
+[31m+ [39m
+[31m+     [90m<[34mstrong[90m>[31m{ greeting.slice( 0, 1 ).toUpperCase() + greeting.slice(1).toLowerCase() }[90m</[34mstrong[90m>[31m[39m
+[31m+     {greeting.endsWith(\\",\\") ? \\" \\" : [90m<[34mspan[90m [36mstyle[90m=[31m{{color:[90m '\\\\[36mgrey[90m'}}>[31m\\", \\"[90m</[34mspan[90m>[31m }[39m
+[31m+     [90m<[34mem[90m>[31m[39m
+[31m+ 	{ greeted }[39m
+[31m+ 	[90m</[34mem[90m>[31m[39m
+[31m+     { (silent)[39m
+[31m+       ? \\".\\"[39m
+[31m+       : \\"!\\"}[39m
+[31m+ [39m
+[31m+     [90m</[34mdiv[90m>[31m;[39m
+[31m+ [39m
+[2m  }[22m
+[32m- [39m",
+  "numFailingTests": 1,
+  "numPassingTests": 0,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        "[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- [33m[34mfunction[33m HelloWorld({[32m[39m
+[32m- [33m  greeting = [31m\\"hello\\"[33m,[32m[39m
+[32m- [33m  greeted = [31m'\\"World\\"'[33m,[32m[39m
+[32m- [33m  silent = false,[32m[39m
+[32m- [33m  onMouseOver[32m[39m
+[32m- [33m}) [32m{[39m
+[32m-   [34mif[32m (!greeting) {[39m
+[32m-     [34mreturn[32m [34mnull[32m;[39m
+[32m-   }[39m
+[31m+ [33m[34mfunction[33m HelloWorld({greeting = [31m\\"hello\\"[33m, greeted = [31m'\\"World\\"'[33m, silent = false, onMouseOver,}) [31m{[39m
+[2m  [22m
+[32m-   [32m// [32mTODO:[32m Don't use random in render[32m[39m
+[32m-   [34mlet[32m num = [36mMath[32m.floor([36mMath[32m.random() * [32m1e7[32m)[39m
+[32m-     .toString()[39m
+[32m-     .replace([31m/\\\\.\\\\d+/gi[32m, [31m\\"\\"[32m);[39m
+[31m+   [34mif[31m(!greeting){[34mreturn[31m [34mnull[31m};[39m
+[2m  [22m
+[32m-   [34mreturn[32m ([39m
+[32m-     [90m<[34mdiv[90m[32m[39m
+[32m- [90m      [36mclassName[90m=[31m\\"HelloWorld\\"[90m[32m[39m
+[32m- [90m      [36mtitle[90m=[31m{[90m\`[36mYou[90m [36mare[90m [36mvisitor[90m [36mnumber[90m \${[36mnum[90m}\`}[32m[39m
+[32m- [90m      [36monMouseOver[90m=[31m{onMouseOver}[90m[32m[39m
+[32m- [90m    >[32m[39m
+[32m-       [90m<[34mstrong[90m>[32m[39m
+[32m-         {greeting.slice(0, 1).toUpperCase() + greeting.slice(1).toLowerCase()}[39m
+[32m-       [90m</[34mstrong[90m>[32m[39m
+[32m-       {greeting.endsWith(\\",\\") ? ([39m
+[32m-         \\" \\"[39m
+[32m-       ) : ([39m
+[32m-         [90m<[34mspan[90m [36mstyle[90m=[31m{{[90m [36mcolor:[90m \\"[36mgrey[90m\\" }}>[32m\\", \\"[90m</[34mspan[90m>[32m[39m
+[32m-       )}[39m
+[32m-       [90m<[34mem[90m>[32m{greeted}[90m</[34mem[90m>[32m[39m
+[32m-       {silent ? \\".\\" : \\"!\\"}[39m
+[32m-     [90m</[34mdiv[90m>[32m[39m
+[32m-   );[39m
+[31m+      [32m// [32mTODO:[32m Don't use random in render[31m[39m
+[31m+   [34mlet[31m num = [36mMath[31m.floor ([36mMath[31m.random() * [32m1E+7[31m).toString().replace([31m/\\\\.\\\\d+/ig[31m, [31m\\"\\"[31m)[39m
+[31m+ [39m
+[31m+   [34mreturn[31m [90m<[34mdiv[90m [36mclassName[90m=[31m'HelloWorld'[90m [36mtitle[90m=[31m{[90m\`[36mYou[90m [36mare[90m [36mvisitor[90m [36mnumber[90m \${ [36mnum[90m }\`} [36monMouseOver[90m=[31m{onMouseOver}[90m>[31m[39m
+[31m+ [39m
+[31m+     [90m<[34mstrong[90m>[31m{ greeting.slice( 0, 1 ).toUpperCase() + greeting.slice(1).toLowerCase() }[90m</[34mstrong[90m>[31m[39m
+[31m+     {greeting.endsWith(\\",\\") ? \\" \\" : [90m<[34mspan[90m [36mstyle[90m=[31m{{color:[90m '\\\\[36mgrey[90m'}}>[31m\\", \\"[90m</[34mspan[90m>[31m }[39m
+[31m+     [90m<[34mem[90m>[31m[39m
+[31m+ 	{ greeted }[39m
+[31m+ 	[90m</[34mem[90m>[31m[39m
+[31m+     { (silent)[39m
+[31m+       ? \\".\\"[39m
+[31m+       : \\"!\\"}[39m
+[31m+ [39m
+[31m+     [90m</[34mdiv[90m>[31m;[39m
+[31m+ [39m
+[2m  }[22m
+[32m- [39m",
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 1,
+      "status": "failed",
+      "title": "",
+    },
+  ],
+}
+`;
+
+exports[`jest-runner-prettier JSX good fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": undefined,
+  "numFailingTests": 0,
+  "numPassingTests": 1,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        undefined,
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 0,
+      "status": "passed",
+      "title": "",
+    },
+  ],
+}
+`;
