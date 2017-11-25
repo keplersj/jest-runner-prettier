@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@^5.1.1":
+"@commitlint/cli@5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-5.1.1.tgz#214cd97c45bd1965c4ff2a5b266516017458c00f"
   dependencies:
@@ -13,7 +13,7 @@
     lodash "4.17.4"
     meow "3.7.0"
 
-"@commitlint/config-conventional@^5.1.3":
+"@commitlint/config-conventional@5.1.3":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-5.1.3.tgz#460a92feaa2911bc49731d5922052fed4be4e07f"
 
@@ -1279,7 +1279,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.14.3:
+husky@0.14.3:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
   dependencies:
@@ -1770,7 +1770,7 @@ jest-worker@21.3.0-beta.9:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^21.2.1:
+jest@21.2.1:
   version "21.2.1"
   resolved "https://registry.yarnpkg.com/jest/-/jest-21.2.1.tgz#c964e0b47383768a1438e3ccf3c3d470327604e1"
   dependencies:
@@ -1895,7 +1895,7 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@^5.0.0:
+lint-staged@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-5.0.0.tgz#f1c670e03e2fdf3f3d0eb81f72d3bcf658770e54"
   dependencies:
