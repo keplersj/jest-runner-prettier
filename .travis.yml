@@ -1,10 +1,5 @@
 language: node_js
 
-stages:
-  - test
-  - name: release
-    if: branch = master AND type = push AND fork = false
-
 env:
   global:
    - FORCE_COLOR=1
@@ -16,22 +11,17 @@ node_js:
 install:
   - yarn
 
+script:
+  - yarn test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  - yarn semantic-release
+
 cache:
   directories:
     - "node_modules"
     - ~/.npm
-
-jobs:
-  include:
-    - stage: test
-      script:
-        - yarn test
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
-    - stage: release
-      script: skip
-      after_success:
-        - yarn semantic-release
 
 notifications:
   email: false
