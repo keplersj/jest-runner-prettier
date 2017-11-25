@@ -1,11 +1,12 @@
 language: node_js
+
 node_js:
   - "node"
   - "lts/*"
-before_script:
-  - npm install -g codecov
+
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
+
 cache:
   directories:
     - "node_modules"
