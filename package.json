@@ -12,7 +12,8 @@
     "test": "jest -c jest.config.js",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged",
-    "semantic-release": "semantic-release"
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"
