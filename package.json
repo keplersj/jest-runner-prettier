@@ -10,7 +10,11 @@
   "scripts": {
     "lint": "jest -c jest-prettier.config.js",
     "test": "jest -c jest.config.js",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*": "jest --bail --findRelatedTests"
   },
   "dependencies": {
     "cli-highlight": "^1.2.1",
@@ -22,6 +26,7 @@
     "@commitlint/cli": "^5.1.1",
     "@commitlint/config-conventional": "^5.1.3",
     "husky": "^0.14.3",
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "lint-staged": "^5.0.0"
   }
 }
