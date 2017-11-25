@@ -17,8 +17,7 @@
     "jest": "^21.2.1"
   },
   "scripts": {
-    "lint": "jest --projects jest-prettier.config.js",
-    "test": "jest",
-    "test:all": "jest --projects jest-*.config.js jest.config.js"
+    "lint": "jest -c jest-prettier.config.js",
+    "test": "jest -c jest.config.js"
   }
 }

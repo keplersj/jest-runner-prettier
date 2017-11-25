@@ -1,6 +1,6 @@
 module.exports = {
   runner: "./src/index.js",
-  displayName: "prettier",
+  displayName: "lint:prettier",
   testMatch: [
     "**/*.js",
     "**/*.jsx",
@@ -14,5 +14,5 @@ module.exports = {
     "**/*.md",
     "**/*.markdown"
   ],
-  testPathIgnorePatterns: ["/node_modules/", "/src/__fixtures__/"]
+  testPathIgnorePatterns: ["/node_modules/", "/src/__fixtures__/", "/coverage/"]
 };
