@@ -1,12 +1,39 @@
 language: node_js
 
+stages:
+  - test
+  - name: release
+    if: branch = master AND type = push AND fork = false
+
 node_js:
   - "node"
   - "lts/*"
+  
+install:
+  - yarn
+  
+script:
+  - yarn test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
+    
 cache:
   directories:
     - "node_modules"
+    - ~/.npm
+
+jobs:
+  include:
+    - stage: test
+    - stage: release
+      script:
+        - yarn semantic-release
+      after_sucess: skip
+
+notifications:
+  email: false
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
