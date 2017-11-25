@@ -1,5 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`jest-runner-prettier JSON bad fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": "[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- {[39m
+[32m-   [36m\\"ohMyGodLongArray\\"[32m: [[39m
+[32m-     [31m\\"prettyLongValue\\"[32m,[39m
+[32m-     [31m\\"decentlyLongValue\\"[32m,[39m
+[32m-     [31m\\"prettyDecentlyLongValue\\"[32m,[39m
+[32m-     [31m\\"wowWowWowWhatALongValue\\"[32m[39m
+[32m-   ],[39m
+[32m-   [36m\\"woahThisObjectIsDisapperingOffTheScreen\\"[32m: {[39m
+[32m-     [36m\\"foo\\"[32m: [31m\\"bar\\"[32m,[39m
+[32m-     [36m\\"bar\\"[32m: [31m\\"foo\\"[32m,[39m
+[32m-     [36m\\"faz\\"[32m: [34mfalse[32m[39m
+[32m-   },[39m
+[32m-   [36m\\"truthy\\"[32m: [34mtrue[32m,[39m
+[32m-   [36m\\"aNumber\\"[32m: [32m123[32m,[39m
+[32m-   [36m\\"aString\\"[32m: [31m\\"hi\\"[32m[39m
+[32m- }[39m
+[32m- [39m
+[31m+ {[36m\\"ohMyGodLongArray\\"[31m: [[31m\\"prettyLongValue\\"[31m, [31m\\"decentlyLongValue\\"[31m,[39m
+[31m+   [31m\\"prettyDecentlyLongValue\\"[31m, [31m\\"wowWowWowWhatALongValue\\"[31m], [36m\\"woahThisObjectIsDisapperingOffTheScreen\\"[31m: {[36m\\"foo\\"[31m: [31m\\"bar\\"[31m,[39m
+[31m+     [36m\\"bar\\"[31m: [31m\\"foo\\"[31m, [36m\\"faz\\"[31m: [34mfalse[31m}, [36m\\"truthy\\"[31m: [34mtrue[31m, [36m\\"aNumber\\"[31m: [32m123[31m, [36m\\"aString\\"[31m: [31m\\"hi\\"[31m[39m
+[31m+   }[39m",
+  "numFailingTests": 1,
+  "numPassingTests": 0,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        "[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- {[39m
+[32m-   [36m\\"ohMyGodLongArray\\"[32m: [[39m
+[32m-     [31m\\"prettyLongValue\\"[32m,[39m
+[32m-     [31m\\"decentlyLongValue\\"[32m,[39m
+[32m-     [31m\\"prettyDecentlyLongValue\\"[32m,[39m
+[32m-     [31m\\"wowWowWowWhatALongValue\\"[32m[39m
+[32m-   ],[39m
+[32m-   [36m\\"woahThisObjectIsDisapperingOffTheScreen\\"[32m: {[39m
+[32m-     [36m\\"foo\\"[32m: [31m\\"bar\\"[32m,[39m
+[32m-     [36m\\"bar\\"[32m: [31m\\"foo\\"[32m,[39m
+[32m-     [36m\\"faz\\"[32m: [34mfalse[32m[39m
+[32m-   },[39m
+[32m-   [36m\\"truthy\\"[32m: [34mtrue[32m,[39m
+[32m-   [36m\\"aNumber\\"[32m: [32m123[32m,[39m
+[32m-   [36m\\"aString\\"[32m: [31m\\"hi\\"[32m[39m
+[32m- }[39m
+[32m- [39m
+[31m+ {[36m\\"ohMyGodLongArray\\"[31m: [[31m\\"prettyLongValue\\"[31m, [31m\\"decentlyLongValue\\"[31m,[39m
+[31m+   [31m\\"prettyDecentlyLongValue\\"[31m, [31m\\"wowWowWowWhatALongValue\\"[31m], [36m\\"woahThisObjectIsDisapperingOffTheScreen\\"[31m: {[36m\\"foo\\"[31m: [31m\\"bar\\"[31m,[39m
+[31m+     [36m\\"bar\\"[31m: [31m\\"foo\\"[31m, [36m\\"faz\\"[31m: [34mfalse[31m}, [36m\\"truthy\\"[31m: [34mtrue[31m, [36m\\"aNumber\\"[31m: [32m123[31m, [36m\\"aString\\"[31m: [31m\\"hi\\"[31m[39m
+[31m+   }[39m",
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 1,
+      "status": "failed",
+      "title": "",
+    },
+  ],
+}
+`;
+
+exports[`jest-runner-prettier JSON good fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": undefined,
+  "numFailingTests": 0,
+  "numPassingTests": 1,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        undefined,
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 0,
+      "status": "passed",
+      "title": "",
+    },
+  ],
+}
+`;
+
 exports[`jest-runner-prettier JSX bad fixture matches snapshot 1`] = `
 Object {
   "console": null,

@@ -32,5 +32,6 @@ const fileTypeTests = fileType => () => {
 };
 
 describe("jest-runner-prettier", () => {
+  describe("JSON", fileTypeTests("json"));
   describe("JSX", fileTypeTests("jsx"));
 });

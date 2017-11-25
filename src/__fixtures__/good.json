@@ -1,0 +1,16 @@
+{
+  "ohMyGodLongArray": [
+    "prettyLongValue",
+    "decentlyLongValue",
+    "prettyDecentlyLongValue",
+    "wowWowWowWhatALongValue"
+  ],
+  "woahThisObjectIsDisapperingOffTheScreen": {
+    "foo": "bar",
+    "bar": "foo",
+    "faz": false
+  },
+  "truthy": true,
+  "aNumber": 123,
+  "aString": "hi"
+}
