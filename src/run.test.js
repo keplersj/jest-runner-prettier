@@ -16,13 +16,13 @@ expect.addSnapshotSerializer({
 
 const snapShotTest = fileName => () => {
   it("matches snapshot", () => {
-    const result = run({
+    return run({
       testPath: path.join(__dirname, "__fixtures__", fileName),
       config: {},
       globalConfig: {}
+    }).then(result => {
+      expect(result).toMatchSnapshot();
     });
-
-    expect(result).toMatchSnapshot();
   });
 };
 
