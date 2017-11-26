@@ -28,7 +28,7 @@ jobs:
         - bash <(curl -s https://codecov.io/bash)
     - stage: release
       script:
-        - yarn semantic-release
+        - npm run semantic-release
       after_sucess: skip
 
 stages:
