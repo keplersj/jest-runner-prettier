@@ -11,13 +11,6 @@ node_js:
 install:
   - yarn
 
-script:
-  - yarn test
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-  - yarn semantic-release
-
 cache:
   directories:
     - "node_modules"
@@ -25,6 +18,23 @@ cache:
 
 notifications:
   email: false
+  
+jobs:
+  include:
+    - stage: test
+      script:
+        - yarn test
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
+    - stage: release
+      script:
+        - yarn semantic-release
+      after_sucess: skip
+
+stages:
+  - test
+  - name: release
+    if: branch = master AND type = push AND fork = false
 
 branches:
   except:

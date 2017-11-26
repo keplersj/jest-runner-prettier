@@ -17,6 +17,9 @@
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"
   },
+  "release": {
+    "verifyConditions": "@semantic-release/github"
+  },
   "dependencies": {
     "cli-highlight": "^1.2.1",
     "create-jest-runner": "0.1.1",
