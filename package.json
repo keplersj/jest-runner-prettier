@@ -8,11 +8,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "jest -c jest-prettier.config.js",
-    "test": "jest -c jest.config.js",
+    "test": "jest",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged",
     "semantic-release": "semantic-release"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["json", "text"],
+    "projects": ["jest-prettier.config.js", "jest-test.config.js"]
   },
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"

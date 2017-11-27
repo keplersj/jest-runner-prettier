@@ -17,7 +17,6 @@
   <!-- TODO: Create GIF showing off runner -->
 </div>
 
-
 ## Usage
 
 ### Install
@@ -30,28 +29,82 @@ yarn add --dev jest jest-runner-prettier
 # or with NPM
 
 npm install --save-dev jest jest-runner-prettier
-
 ```
 
 ### Add it to your Jest config
 
 In your `package.json`
+
 ```json
 {
   "jest": {
-    "runner": "jest-runner-prettier"
+    "runner": "jest-runner-prettier",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx",
+      "css",
+      "less",
+      "scss",
+      "graphql",
+      "md",
+      "markdown"
+    ],
+    "testMatch": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.json",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.css",
+      "**/*.less",
+      "**/*.scss",
+      "**/*.graphql",
+      "**/*.md",
+      "**/*.markdown"
+    ]
   }
 }
 ```
 
 Or in `jest.config.js`
+
 ```js
 module.exports = {
-  runner: 'jest-runner-prettier',
-}
+  runner: "jest-runner-prettier",
+  moduleFileExtensions: [
+    "js",
+    "jsx",
+    "json",
+    "ts",
+    "tsx",
+    "css",
+    "less",
+    "scss",
+    "graphql",
+    "md",
+    "markdown"
+  ],
+  testMatch: [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.css",
+    "**/*.less",
+    "**/*.scss",
+    "**/*.graphql",
+    "**/*.md",
+    "**/*.markdown"
+  ]
+};
 ```
 
 ### Run Jest
+
 ```bash
 yarn jest
 ```
