@@ -13,9 +13,9 @@
     lodash "4.17.4"
     meow "3.7.0"
 
-"@commitlint/config-conventional@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-5.1.3.tgz#460a92feaa2911bc49731d5922052fed4be4e07f"
+"@commitlint/config-conventional@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-5.2.3.tgz#63671b32b65cb68e7b238405403194b558ff559a"
 
 "@commitlint/core@^5.2.0":
   version "5.2.0"
