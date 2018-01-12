@@ -31,7 +31,7 @@
     "prettier": "^1.8.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "6.0.1",
+    "@commitlint/cli": "6.0.2",
     "@commitlint/config-conventional": "5.2.3",
     "husky": "0.14.3",
     "jest": "22.0.6",
