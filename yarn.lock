@@ -928,9 +928,9 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-create-jest-runner@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.1.1.tgz#b4d957f61c391305b1f2ad797e905c655b4dc68c"
+create-jest-runner@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.2.0.tgz#8eaf0bf5608dbca1608f0d13cddf5669607e5e6c"
   dependencies:
     babel-plugin-istanbul "4.1.4"
     babel-polyfill "^6.26.0"
