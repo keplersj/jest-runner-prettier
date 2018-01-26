@@ -730,9 +730,9 @@ cli-cursor@^1.0.2:
   dependencies:
     restore-cursor "^1.0.1"
 
-cli-highlight@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-1.2.1.tgz#c8a7cd603e075f7446c75fa60384a6faeab08483"
+cli-highlight@^1.0.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-1.2.3.tgz#b200f97ed0e43d24633e89de0f489a48bb87d2bf"
   dependencies:
     chalk "^2.3.0"
     highlight.js "^9.6.0"
