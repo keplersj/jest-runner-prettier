@@ -36,6 +36,6 @@
     "husky": "0.14.3",
     "jest": "22.4.2",
     "lint-staged": "7.0.0",
-    "semantic-release": "11.2.0"
+    "semantic-release": "12.4.1"
   }
 }
