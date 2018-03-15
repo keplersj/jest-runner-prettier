@@ -6,7 +6,7 @@
   <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
   <img width="150" height="150" src="https://github.com/prettier/prettier-logo/raw/master/images/prettier-icon-light.png">
   <a href="https://facebook.github.io/jest/">
-    <img width="150" height="150" vspace="" hspace="25" src="https://cdn.worldvectorlogo.com/logos/jest.svg">
+    <img width="150" height="150" vspace="" hspace="25" src="https://user-images.githubusercontent.com/2440089/37489554-6f776bd2-286e-11e8-862f-cb6c398cf752.png">
   </a>
   <h1>jest-runner-prettier</h1>
   <p>Prettier runner for Jest</p>
