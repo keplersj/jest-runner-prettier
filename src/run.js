@@ -1,11 +1,10 @@
-const chalk = require("chalk");
 const { highlight } = require("cli-highlight");
 const { pass, fail } = require("create-jest-runner");
 const fs = require("fs");
 const diff = require("jest-diff");
 const prettier = require("prettier");
 
-module.exports = ({ testPath, config, globalConfig }) => {
+module.exports = ({ testPath }) => {
   const start = new Date();
   const contents = fs.readFileSync(testPath, "utf8");
 
