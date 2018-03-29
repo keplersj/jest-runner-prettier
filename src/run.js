@@ -24,6 +24,11 @@ module.exports = ({ testPath }) => {
 
     const formatted = prettier.format(contents, prettierConfig);
 
+    // a custom config value that is only used by jest-runner-prettier
+    if (prettierConfig.jestRunnerWrite) {
+      fs.writeFileSync(testPath, formatted, "utf8");
+    }
+
     return fail({
       start,
       end: new Date(),
