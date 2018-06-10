@@ -1053,9 +1053,9 @@ cosmiconfig@^5.0.2:
     js-yaml "^3.9.0"
     parse-json "^4.0.0"
 
-create-jest-runner@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.3.1.tgz#c4cd197a3fe3dcfff3f0e1b2c19f7cc562ac6928"
+create-jest-runner@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.4.0.tgz#7a9419e9410484aec5048691c19745a4285baf45"
   dependencies:
     jest-worker "^22.0.0"
     throat "^4.1.0"
