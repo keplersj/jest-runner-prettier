@@ -15,8 +15,14 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["json", "text"],
-    "projects": ["jest-prettier.config.js", "jest-test.config.js"]
+    "coverageReporters": [
+      "json",
+      "text"
+    ],
+    "projects": [
+      "jest-prettier.config.js",
+      "jest-test.config.js"
+    ]
   },
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"
@@ -27,8 +33,10 @@
   "dependencies": {
     "cli-highlight": "^1.2.1",
     "create-jest-runner": "0.4.0",
-    "jest-diff": "^22.0.0",
-    "prettier": "^1.8.2"
+    "jest-diff": "^22.0.0"
+  },
+  "peerDependencies": {
+    "prettier": ">= 1.8"
   },
   "devDependencies": {
     "@commitlint/cli": "6.2.0",
@@ -36,6 +44,7 @@
     "husky": "0.14.3",
     "jest": "22.4.4",
     "lint-staged": "7.2.0",
+    "prettier": "1.13.4",
     "semantic-release": "11.2.0"
   }
 }
