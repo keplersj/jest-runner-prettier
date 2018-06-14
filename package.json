@@ -31,7 +31,7 @@
     "verifyConditions": "@semantic-release/github"
   },
   "dependencies": {
-    "cli-highlight": "^1.2.1",
+    "cli-highlight": "^2.0.0",
     "create-jest-runner": "0.4.0",
     "jest-diff": "^22.0.0"
   },
