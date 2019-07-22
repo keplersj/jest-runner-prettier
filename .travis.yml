@@ -2,33 +2,22 @@ language: node_js
 
 env:
   global:
-   - FORCE_COLOR=1
+    - FORCE_COLOR=1
 
 node_js:
   - "node"
   - "lts/*"
 
-install:
-  - yarn
-
-cache:
-  directories:
-    - "node_modules"
-    - ~/.npm
-
-notifications:
-  email: false
-  
 jobs:
   include:
     - stage: test
       script:
-        - yarn test
+        - npm test
       after_success:
         - bash <(curl -s https://codecov.io/bash)
     - stage: release
       script:
-        - npm run semantic-release
+        - npx semantic-release
       after_sucess: skip
 
 stages:
