@@ -8,43 +8,35 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "jest",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "lint-staged",
-    "semantic-release": "semantic-release"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": [
-      "json",
-      "text"
-    ],
-    "projects": [
-      "jest-prettier.config.js",
-      "jest-test.config.js"
-    ]
+    "test": "jest"
   },
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "release": {
     "verifyConditions": "@semantic-release/github"
   },
   "dependencies": {
-    "cli-highlight": "^2.0.0",
-    "create-jest-runner": "0.4.1",
-    "jest-diff": "23.6.0"
+    "cli-highlight": "^2.1.1",
+    "create-jest-runner": "^0.5.3",
+    "jest-diff": "^24.8.0"
   },
   "peerDependencies": {
     "prettier": ">= 1.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.1.0",
-    "@commitlint/config-conventional": "8.1.0",
-    "husky": "0.14.3",
-    "jest": "23.6.0",
-    "lint-staged": "7.3.0",
-    "prettier": "1.18.2",
-    "semantic-release": "11.2.0"
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2",
+    "semantic-release": "^15.13.18"
   }
 }
