@@ -33,6 +33,9 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "@stryker-mutator/core": "^2.0.2",
+    "@stryker-mutator/javascript-mutator": "^2.0.2",
+    "@stryker-mutator/jest-runner": "^2.0.2",
     "husky": "^3.0.1",
     "jest": "^24.8.0",
     "lint-staged": "^9.2.0",

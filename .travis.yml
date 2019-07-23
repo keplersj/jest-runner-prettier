@@ -13,6 +13,7 @@ jobs:
     - stage: test
       script:
         - npm test
+        - npx stryker run
       after_success:
         - bash <(curl -s https://codecov.io/bash)
     - stage: release
