@@ -1,7 +1,9 @@
 version: 1
 update_configs:
-  # required properties omitted ...
-  commit_message:
-    prefix: "fix"
-    prefix_development: "chore"
-    include_scope: true
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    commit_message:
+      prefix: "fix"
+      prefix_development: "chore"
+      include_scope: true
