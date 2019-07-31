@@ -1,0 +1,7 @@
+version: 1
+update_configs:
+  # required properties omitted ...
+  commit_message:
+    prefix: "fix"
+    prefix_development: "chore"
+    include_scope: true
