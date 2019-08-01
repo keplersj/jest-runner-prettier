@@ -7,3 +7,7 @@ update_configs:
       prefix: "fix"
       prefix_development: "chore"
       include_scope: true
+    automerged_updates:
+      - match:
+        dependency_type: "all"
+        update_type: "all"
