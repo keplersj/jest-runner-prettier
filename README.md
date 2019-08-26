@@ -22,24 +22,46 @@
 
 ### Install
 
-Install `jest`_(it needs Jest 21+)_ and `jest-runner-prettier`
+Install `jest`, `prettier` and `jest-runner-prettier`
 
 ```bash
-yarn add --dev jest jest-runner-prettier
+yarn add --dev jest prettier jest-runner-prettier
 
 # or with NPM
 
-npm install --save-dev jest jest-runner-prettier
+npm install --save-dev jest prettier jest-runner-prettier
 ```
 
 ### Add it to your Jest config
+
+#### Using Built-in Preset
+
+This package includes a [Jest preset](https://jestjs.io/docs/en/configuration#preset-string) which configures Jest to run Prettier on all files supported by Prettier. To use it set the following in your `package.json`:
+
+```json
+{
+  "jest": {
+    "preset": "jest-runner-prettier"
+  }
+}
+```
+
+or `jest.config.js`:
+
+```js
+module.exports = {
+  preset: "jest-runner-prettier"
+};
+```
+
+#### Manually
 
 In your `package.json`
 
 ```json
 {
   "jest": {
-    "runner": "jest-runner-prettier",
+    "runner": "prettier",
     "moduleFileExtensions": [
       "js",
       "jsx",
@@ -74,7 +96,7 @@ Or in `jest.config.js`
 
 ```js
 module.exports = {
-  runner: "jest-runner-prettier",
+  runner: "prettier",
   moduleFileExtensions: [
     "js",
     "jsx",
@@ -107,5 +129,9 @@ module.exports = {
 ### Run Jest
 
 ```bash
+npx jest
+
+# or, with yarn
+
 yarn jest
 ```
