@@ -82,23 +82,23 @@ In your `package.json`
       "yml"
     ],
     "testMatch": [
-      "**/*js",
-      "**/*mjs",
-      "**/*jsx",
-      "**/*vue",
-      "**/*ts",
-      "**/*tsx",
-      "**/*css",
-      "**/*less",
-      "**/*scss",
-      "**/*html",
-      "**/*json",
-      "**/*graphql",
-      "**/*md",
-      "**/*markdown",
-      "**/*mdx",
-      "**/*yaml",
-      "**/*yml"
+      "**/*.js",
+      "**/*.mjs",
+      "**/*.jsx",
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.css",
+      "**/*.less",
+      "**/*.scss",
+      "**/*.html",
+      "**/*.json",
+      "**/*.graphql",
+      "**/*.md",
+      "**/*.markdown",
+      "**/*.mdx",
+      "**/*.yaml",
+      "**/*.yml"
     ]
   }
 }
@@ -129,23 +129,23 @@ module.exports = {
     "yml"
   ],
   testMatch: [
-    "**/*js",
-    "**/*mjs",
-    "**/*jsx",
-    "**/*vue",
-    "**/*ts",
-    "**/*tsx",
-    "**/*css",
-    "**/*less",
-    "**/*scss",
-    "**/*html",
-    "**/*json",
-    "**/*graphql",
-    "**/*md",
-    "**/*markdown",
-    "**/*mdx",
-    "**/*yaml",
-    "**/*yml"
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.jsx",
+    "**/*.vue",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.css",
+    "**/*.less",
+    "**/*.scss",
+    "**/*.html",
+    "**/*.json",
+    "**/*.graphql",
+    "**/*.md",
+    "**/*.markdown",
+    "**/*.mdx",
+    "**/*.yaml",
+    "**/*.yml"
   ]
 };
 ```
