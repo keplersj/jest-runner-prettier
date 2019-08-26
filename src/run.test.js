@@ -14,24 +14,56 @@ expect.addSnapshotSerializer({
   test: val => val && val.perfStats && val.testFilePath && val.testResults
 });
 
-const snapShotTest = fileName => () => {
-  it("matches snapshot", () => {
-    return run({
-      testPath: path.join(__dirname, "__fixtures__", fileName),
-      config: {},
-      globalConfig: {}
-    }).then(result => {
-      expect(result).toMatchSnapshot();
+describe("jest-runner-prettier", () => {
+  describe("JSON", () => {
+    describe("good fixture", () => {
+      it("matches snapshot", () => {
+        return run({
+          testPath: path.join(__dirname, "__fixtures__", `good.json`),
+          config: {},
+          globalConfig: {}
+        }).then(result => {
+          expect(result).toMatchSnapshot();
+        });
+      });
+    });
+
+    describe("bad fixture", () => {
+      it("matches snapshot", () => {
+        return run({
+          testPath: path.join(__dirname, "__fixtures__", `bad.json`),
+          config: {},
+          globalConfig: {}
+        }).then(result => {
+          expect(result).toMatchSnapshot();
+        });
+      });
     });
   });
-};
 
-const fileTypeTests = fileType => () => {
-  describe("good fixture", snapShotTest(`good.${fileType}`));
-  describe("bad fixture", snapShotTest(`bad.${fileType}`));
-};
+  describe("JSX", () => {
+    describe("good fixture", () => {
+      it("matches snapshot", () => {
+        return run({
+          testPath: path.join(__dirname, "__fixtures__", `good.jsx`),
+          config: {},
+          globalConfig: {}
+        }).then(result => {
+          expect(result).toMatchSnapshot();
+        });
+      });
+    });
 
-describe("jest-runner-prettier", () => {
-  describe("JSON", fileTypeTests("json"));
-  describe("JSX", fileTypeTests("jsx"));
+    describe("bad fixture", () => {
+      it("matches snapshot", () => {
+        return run({
+          testPath: path.join(__dirname, "__fixtures__", `bad.jsx`),
+          config: {},
+          globalConfig: {}
+        }).then(result => {
+          expect(result).toMatchSnapshot();
+        });
+      });
+    });
+  });
 });
