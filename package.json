@@ -36,7 +36,7 @@
     "@stryker-mutator/core": "^2.0.2",
     "@stryker-mutator/javascript-mutator": "^2.0.2",
     "@stryker-mutator/jest-runner": "^2.0.2",
-    "husky": "^3.0.1",
+    "husky": "^4.0.0",
     "jest": "^24.8.0",
     "lint-staged": "^9.2.0",
     "prettier": "^1.18.2",
