@@ -38,7 +38,7 @@
     "@stryker-mutator/jest-runner": "^2.0.2",
     "husky": "^4.0.0",
     "jest": "^24.8.0",
-    "lint-staged": "^9.2.0",
+    "lint-staged": "^10.0.0",
     "prettier": "^1.18.2",
     "semantic-release": "^16.0.0"
   }
