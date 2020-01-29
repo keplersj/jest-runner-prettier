@@ -36,10 +36,19 @@
     "@stryker-mutator/core": "^2.0.2",
     "@stryker-mutator/javascript-mutator": "^2.0.2",
     "@stryker-mutator/jest-runner": "^2.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-starstuff": "^1.4.5",
     "husky": "^4.0.0",
     "jest": "^24.8.0",
+    "jest-runner-eslint": "^0.7.6",
     "lint-staged": "^10.0.0",
     "prettier": "^1.18.2",
     "semantic-release": "^17.0.1"
+  },
+  "eslintConfig": {
+    "extends": "starstuff/auto",
+    "env": {
+      "node": true
+    }
   }
 }
