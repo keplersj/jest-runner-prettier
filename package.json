@@ -35,7 +35,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@stryker-mutator/core": "^2.0.2",
     "@stryker-mutator/javascript-mutator": "^2.0.2",
-    "@stryker-mutator/jest-runner": "^2.0.2",
+    "@stryker-mutator/jest-runner": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-config-starstuff": "^1.4.5",
     "husky": "^4.0.0",
