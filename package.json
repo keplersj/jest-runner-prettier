@@ -31,7 +31,7 @@
     "prettier": ">= 1.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
+    "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@stryker-mutator/core": "^2.0.2",
     "@stryker-mutator/javascript-mutator": "^3.0.0",
