@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "cli-highlight": "^2.1.1",
-    "create-jest-runner": "^0.6.0",
+    "create-jest-runner": "^0.7.0",
     "jest-diff": "^26.0.0"
   },
   "peerDependencies": {
