@@ -41,7 +41,7 @@
     "husky": "^6.0.0",
     "jest": "^26.0.1",
     "jest-runner-eslint": "^0.10.0",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.0.2",
     "semantic-release": "^17.0.1"
   },
