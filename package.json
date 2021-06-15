@@ -39,7 +39,7 @@
     "eslint": "^6.8.0",
     "eslint-config-starstuff": "^1.4.5",
     "husky": "^6.0.0",
-    "jest": "^26.0.1",
+    "jest": "^27.0.4",
     "jest-runner-eslint": "^0.10.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.0.2",
