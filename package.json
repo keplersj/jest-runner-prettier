@@ -38,7 +38,7 @@
     "@stryker-mutator/jest-runner": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-config-starstuff": "^1.4.5",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "jest": "^27.0.4",
     "jest-runner-eslint": "^0.10.0",
     "lint-staged": "^11.0.0",
