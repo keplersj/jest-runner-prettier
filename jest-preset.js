@@ -17,7 +17,7 @@ module.exports = {
     "markdown",
     "mdx",
     "yaml",
-    "yml"
+    "yml",
   ],
   testMatch: [
     "**/*.js",
@@ -36,6 +36,6 @@ module.exports = {
     "**/*.markdown",
     "**/*.mdx",
     "**/*.yaml",
-    "**/*.yml"
-  ]
+    "**/*.yml",
+  ],
 };

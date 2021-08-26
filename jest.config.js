@@ -5,7 +5,7 @@ module.exports = {
     {
       collectCoverage: true,
       coverageReporters: ["json", "text"],
-      displayName: "test"
+      displayName: "test",
     },
     {
       preset: "./jest-preset.js",
@@ -14,13 +14,13 @@ module.exports = {
       testPathIgnorePatterns: [
         "/node_modules/",
         "/src/__fixtures__/",
-        "/coverage/"
-      ]
+        "/coverage/",
+      ],
     },
     {
       runner: "eslint",
       displayName: "lint:eslint",
-      testMatch: ["<rootDir>/**/*.js"]
-    }
-  ]
+      testMatch: ["<rootDir>/**/*.js"],
+    },
+  ],
 };
