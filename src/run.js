@@ -1,7 +1,7 @@
 const { highlight } = require("cli-highlight");
 const { pass, fail } = require("create-jest-runner");
 const fs = require("fs");
-const diff = require("jest-diff");
+const { diff } = require("jest-diff");
 const prettier = require("prettier");
 
 module.exports = ({ testPath }) => {
