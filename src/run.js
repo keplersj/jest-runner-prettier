@@ -1,16 +1,16 @@
 const { highlight } = require("cli-highlight");
 const { pass, fail } = require("create-jest-runner");
 const fs = require("fs");
-const diff = require("jest-diff");
+const { diff } = require("jest-diff");
 const prettier = require("prettier");
 
 module.exports = ({ testPath }) => {
   const start = new Date();
   const contents = fs.readFileSync(testPath, "utf8");
 
-  return prettier.resolveConfig(testPath).then(config => {
+  return prettier.resolveConfig(testPath).then((config) => {
     const prettierConfig = Object.assign({}, config, {
-      filepath: testPath
+      filepath: testPath,
     });
 
     const isPretty = prettier.check(contents, prettierConfig);
@@ -18,7 +18,7 @@ module.exports = ({ testPath }) => {
       return pass({
         start,
         end: new Date(),
-        test: { path: testPath }
+        test: { path: testPath },
       });
     }
 
@@ -30,9 +30,9 @@ module.exports = ({ testPath }) => {
       test: {
         path: testPath,
         errorMessage: diff(highlight(formatted), highlight(contents), {
-          expand: false
-        })
-      }
+          expand: false,
+        }),
+      },
     });
   });
 };

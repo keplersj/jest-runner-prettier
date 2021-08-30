@@ -50,7 +50,7 @@ or `jest.config.js`:
 
 ```js
 module.exports = {
-  preset: "jest-runner-prettier"
+  preset: "jest-runner-prettier",
 };
 ```
 
@@ -126,7 +126,7 @@ module.exports = {
     "markdown",
     "mdx",
     "yaml",
-    "yml"
+    "yml",
   ],
   testMatch: [
     "**/*.js",
@@ -145,8 +145,8 @@ module.exports = {
     "**/*.markdown",
     "**/*.mdx",
     "**/*.yaml",
-    "**/*.yml"
-  ]
+    "**/*.yml",
+  ],
 };
 ```
 
