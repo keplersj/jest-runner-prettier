@@ -14,9 +14,10 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
   const contents = await fs.readFile(testPath, "utf8");
   const config = await prettier.resolveConfig(testPath);
 
-  const prettierConfig = Object.assign({}, config, {
+  const prettierConfig = {
+    ...config,
     filepath: testPath,
-  });
+  };
 
   const isPretty = prettier.check(contents, prettierConfig);
   if (isPretty) {
