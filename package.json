@@ -5,6 +5,10 @@
   "main": "src/index.js",
   "repository": "https://github.com/keplersj/jest-runner-prettier",
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "funding": {
+    "type": "github-sponsors",
+    "url": "https://github.com/sponsors/keplersj"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
