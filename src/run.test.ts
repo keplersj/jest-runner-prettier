@@ -1,12 +1,16 @@
-const path = require("path");
-const run = require("./run");
+import path from "path";
+import run from "./run";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Remove undeterministic data from test reports
 expect.addSnapshotSerializer({
-  print: (value, serialize) => {
+  print: (value: any, serialize) => {
     delete value.perfStats;
     delete value.testFilePath;
-    value.testResults.forEach((result) => {
+    value.testResults.forEach((result: any) => {
       delete result.duration;
     });
     return serialize(value);
@@ -21,8 +25,6 @@ describe("jest-runner-prettier", () => {
       it("matches snapshot", () => {
         return run({
           testPath: path.join(__dirname, "__fixtures__", `good.json`),
-          config: {},
-          globalConfig: {},
         }).then((result) => expect(result).toMatchSnapshot());
       });
     });
@@ -31,8 +33,6 @@ describe("jest-runner-prettier", () => {
       it("matches snapshot", () => {
         return run({
           testPath: path.join(__dirname, "__fixtures__", `bad.json`),
-          config: {},
-          globalConfig: {},
         }).then((result) => expect(result).toMatchSnapshot());
       });
     });
@@ -43,8 +43,6 @@ describe("jest-runner-prettier", () => {
       it("matches snapshot", () => {
         return run({
           testPath: path.join(__dirname, "__fixtures__", `good.jsx`),
-          config: {},
-          globalConfig: {},
         }).then((result) => expect(result).toMatchSnapshot());
       });
     });
@@ -53,8 +51,6 @@ describe("jest-runner-prettier", () => {
       it("matches snapshot", () => {
         return run({
           testPath: path.join(__dirname, "__fixtures__", `bad.jsx`),
-          config: {},
-          globalConfig: {},
         }).then((result) => expect(result).toMatchSnapshot());
       });
     });

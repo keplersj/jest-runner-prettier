@@ -1,6 +1,7 @@
 {
   "name": "jest-runner-prettier",
   "version": "0.0.0-development",
+  "type": "module",
   "description": "A prettier runner for Jest",
   "main": "src/index.js",
   "repository": "https://github.com/keplersj/jest-runner-prettier",
@@ -12,10 +13,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prepack": "npm run build"
   },
   "lint-staged": {
-    "*": "jest --bail --findRelatedTests"
+    "*": "node --experimental-vm-modules node_modules/jest/bin/jest.js --bail --findRelatedTests"
   },
   "husky": {
     "hooks": {
@@ -29,22 +32,27 @@
   "dependencies": {
     "cli-highlight": "^2.1.1",
     "create-jest-runner": "^0.8.0",
-    "jest-diff": "^27.0.0"
+    "jest-diff": "^27.0.0",
+    "jest-runner": "^27.5.1",
+    "p-limit": "^4.0.0"
   },
   "peerDependencies": {
-    "prettier": ">= 1.8",
-    "jest": ">= 27.0.0"
+    "jest": ">= 27.0.0",
+    "prettier": ">= 1.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@types/jest": "^27.4.1",
     "eslint": "^6.8.0",
     "eslint-config-starstuff": "^1.4.5",
     "husky": "^7.0.0",
     "jest": "^27.0.4",
     "jest-runner-eslint": "^0.10.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
   },
   "eslintConfig": {
     "extends": "starstuff/auto",

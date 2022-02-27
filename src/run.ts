@@ -1,11 +1,16 @@
-const { highlight } = require("cli-highlight");
-const { pass, fail } = require("create-jest-runner");
-const fs = require("fs");
-const { diff } = require("jest-diff");
-const prettier = require("prettier");
+import { TestResult } from "@jest/test-result";
+import { highlight } from "cli-highlight";
+import { pass, fail } from "create-jest-runner";
+import fs from "fs";
+import { diff } from "jest-diff";
+import prettier from "prettier";
 
-module.exports = ({ testPath }) => {
-  const start = new Date();
+interface Parameters {
+  testPath: string;
+}
+
+export default ({ testPath }: Parameters): Promise<TestResult> => {
+  const start = new Date().getTime();
   const contents = fs.readFileSync(testPath, "utf8");
 
   return prettier.resolveConfig(testPath).then((config) => {
@@ -17,7 +22,7 @@ module.exports = ({ testPath }) => {
     if (isPretty) {
       return pass({
         start,
-        end: new Date(),
+        end: new Date().getTime(),
         test: { path: testPath },
       });
     }
@@ -26,7 +31,7 @@ module.exports = ({ testPath }) => {
 
     return fail({
       start,
-      end: new Date(),
+      end: new Date().getTime(),
       test: {
         path: testPath,
         errorMessage: diff(highlight(formatted), highlight(contents), {
