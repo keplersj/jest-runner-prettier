@@ -15,16 +15,11 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run build; node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*": "node --experimental-vm-modules node_modules/jest/bin/jest.js --bail --findRelatedTests"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "release": {
     "verifyConditions": "@semantic-release/github"
@@ -60,5 +55,10 @@
     "env": {
       "node": true
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
