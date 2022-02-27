@@ -43,8 +43,7 @@
     "jest": "^27.0.4",
     "jest-runner-eslint": "^0.10.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.0.2",
-    "semantic-release": "^17.0.1"
+    "prettier": "^2.0.2"
   },
   "eslintConfig": {
     "extends": "starstuff/auto",
