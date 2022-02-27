@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "type": "module",
   "description": "A prettier runner for Jest",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/keplersj/jest-runner-prettier",
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
   "funding": {
@@ -14,7 +14,7 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "npm run build; node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "prepack": "npm run build"
   },
   "lint-staged": {
@@ -30,8 +30,8 @@
     "verifyConditions": "@semantic-release/github"
   },
   "dependencies": {
-    "cli-highlight": "^2.1.1",
     "create-jest-runner": "^0.8.0",
+    "emphasize": "^5.0.0",
     "jest-diff": "^27.0.0",
     "jest-runner": "^27.5.1",
     "p-limit": "^4.0.0"

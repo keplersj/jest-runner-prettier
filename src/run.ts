@@ -1,5 +1,5 @@
 import { TestResult } from "@jest/test-result";
-import { highlight } from "cli-highlight";
+import { emphasize } from "emphasize";
 import { pass, fail } from "create-jest-runner";
 import fs from "fs";
 import { diff } from "jest-diff";
@@ -34,9 +34,13 @@ export default ({ testPath }: Parameters): Promise<TestResult> => {
       end: new Date().getTime(),
       test: {
         path: testPath,
-        errorMessage: diff(highlight(formatted), highlight(contents), {
-          expand: false,
-        }),
+        errorMessage: diff(
+          emphasize.highlightAuto(formatted).value,
+          emphasize.highlightAuto(contents).value,
+          {
+            expand: false,
+          }
+        ),
       },
     });
   });
