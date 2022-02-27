@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.org/keplersj/jest-runner-prettier.svg?branch=master)](https://travis-ci.org/keplersj/jest-runner-prettier)
-[![npm version](https://badge.fury.io/js/jest-runner-prettier.svg)](https://badge.fury.io/js/jest-runner-prettier)
-[![codecov](https://codecov.io/gh/keplersj/jest-runner-prettier/branch/master/graph/badge.svg)](https://codecov.io/gh/keplersj/jest-runner-prettier)
+[![npm](https://img.shields.io/npm/v/jest-runner-prettier)](https://www.npmjs.com/package/jest-runner-prettier)
+[![npm](https://img.shields.io/npm/dw/jest-runner-prettier)](https://www.npmjs.com/package/jest-runner-prettier)
+[![Codecov](https://img.shields.io/codecov/c/github/keplersj/jest-runner-prettier)](https://app.codecov.io/gh/keplersj/jest-runner-prettier)
+[![Bundle Size](https://img.shields.io/bundlephobia/min/jest-runner-prettier)](https://bundlephobia.com/package/jest-runner-prettier)
 [![Mentioned in Awesome Jest](https://awesome.re/mentioned-badge.svg)](https://github.com/jest-community/awesome-jest)
 
 <div align="center">
