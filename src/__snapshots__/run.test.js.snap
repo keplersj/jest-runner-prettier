@@ -102,9 +102,7 @@ Object {
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
-      "failureMessages": Array [
-        undefined,
-      ],
+      "failureMessages": Array [],
       "fullName": undefined,
       "numPassingAsserts": 0,
       "status": "passed",
@@ -280,9 +278,7 @@ Object {
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
-      "failureMessages": Array [
-        undefined,
-      ],
+      "failureMessages": Array [],
       "fullName": undefined,
       "numPassingAsserts": 0,
       "status": "passed",
