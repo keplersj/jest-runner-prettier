@@ -8,7 +8,10 @@ export default class PrettierTestRunner {
   constructor(
     public readonly _globalConfig: Config.GlobalConfig,
     public readonly _context: JestRunner.TestRunnerContext = {}
-  ) {}
+  ) {
+    this._globalConfig = _globalConfig;
+    this._context = _context;
+  }
 
   async runTests(
     tests: Array<JestRunner.Test>,

@@ -1,7 +1,7 @@
 import { TestResult } from "@jest/test-result";
 import { emphasize } from "emphasize";
 import { pass, fail } from "create-jest-runner";
-import * as fs from "fs/promises";
+import * as fs from "node:fs/promises";
 import { diff } from "jest-diff";
 import prettier from "prettier";
 
@@ -10,7 +10,7 @@ interface Parameters {
 }
 
 export default async ({ testPath }: Parameters): Promise<TestResult> => {
-  const start = new Date().getTime();
+  const start = Date.now();
   const contents = await fs.readFile(testPath, "utf8");
   const config = await prettier.resolveConfig(testPath);
 
@@ -23,7 +23,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
   if (isPretty) {
     return pass({
       start,
-      end: new Date().getTime(),
+      end: Date.now(),
       test: { path: testPath },
     });
   }
@@ -32,7 +32,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
 
   return fail({
     start,
-    end: new Date().getTime(),
+    end: Date.now(),
     test: {
       path: testPath,
       errorMessage: diff(

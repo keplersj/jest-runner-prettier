@@ -1,6 +1,6 @@
-import path from "path";
+import path from "node:path";
 import run from "./run";
-import { fileURLToPath } from "url";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -10,9 +10,9 @@ expect.addSnapshotSerializer({
   print: (value: any, serialize) => {
     delete value.perfStats;
     delete value.testFilePath;
-    value.testResults.forEach((result: any) => {
+    for (const result of value.testResults) {
       delete result.duration;
-    });
+    }
     return serialize(value);
   },
   test: (value) =>
