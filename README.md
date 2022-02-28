@@ -2,6 +2,7 @@
 [![npm](https://img.shields.io/npm/dw/jest-runner-prettier)](https://www.npmjs.com/package/jest-runner-prettier)
 [![Codecov](https://img.shields.io/codecov/c/github/keplersj/jest-runner-prettier)](https://app.codecov.io/gh/keplersj/jest-runner-prettier)
 [![Bundle Size](https://img.shields.io/bundlephobia/min/jest-runner-prettier)](https://bundlephobia.com/package/jest-runner-prettier)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/)
 [![Mentioned in Awesome Jest](https://awesome.re/mentioned-badge.svg)](https://github.com/jest-community/awesome-jest)
 
 <div align="center">
@@ -160,3 +161,7 @@ npx jest
 
 yarn jest
 ```
+
+## License
+
+Copyright [Kepler Sticka-Jones](https://keplersj.com) 2017-2022. Licensed MIT.
