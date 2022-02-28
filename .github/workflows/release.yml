@@ -16,8 +16,6 @@ jobs:
           node-version: lts/*
       - name: Install npm dependencies
         run: npm ci
-      - name: Lint
-        run: npm run lint
       - name: Run tests
         env:
           FORCE_COLOR: 1
