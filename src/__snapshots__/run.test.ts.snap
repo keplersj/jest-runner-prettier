@@ -2,7 +2,9 @@
 
 exports[`jest-runner-prettier JSON bad fixture matches snapshot 1`] = `
 Object {
-  "console": null,
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
   "failureMessage": "[32m- Expected[39m
 [31m+ Received[39m
 
@@ -27,24 +29,28 @@ Object {
 [31m+   [36m\\"prettyDecentlyLongValue\\"[39m[31m, [36m\\"wowWowWowWhatALongValue\\"[39m[31m], [33m\\"woahThisObjectIsDisapperingOffTheScreen\\"[39m[31m: {[33m\\"foo\\"[39m[31m: [36m\\"bar\\"[39m[31m,[39m
 [31m+     [33m\\"bar\\"[39m[31m: [36m\\"foo\\"[39m[31m, [33m\\"faz\\"[39m[31m: [32mfalse[39m[31m}, [33m\\"truthy\\"[39m[31m: [32mtrue[39m[31m, [33m\\"aNumber\\"[39m[31m: [36m123[39m[31m, [33m\\"aString\\"[39m[31m: [36m\\"hi\\"[39m[31m[39m
 [31m+   }[39m",
+  "leaks": false,
+  "memoryUsage": undefined,
   "numFailingTests": 1,
   "numPassingTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "skipped": undefined,
+  "openHandles": Array [],
+  "skipped": false,
   "snapshot": Object {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
+    "uncheckedKeys": Array [],
     "unmatched": 0,
     "updated": 0,
   },
-  "sourceMaps": Object {},
-  "testExecError": null,
+  "testExecError": undefined,
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
+      "failureDetails": Array [],
       "failureMessages": Array [
         "[32m- Expected[39m
 [31m+ Received[39m
@@ -71,50 +77,60 @@ Object {
 [31m+     [33m\\"bar\\"[39m[31m: [36m\\"foo\\"[39m[31m, [33m\\"faz\\"[39m[31m: [32mfalse[39m[31m}, [33m\\"truthy\\"[39m[31m: [32mtrue[39m[31m, [33m\\"aNumber\\"[39m[31m: [36m123[39m[31m, [33m\\"aString\\"[39m[31m: [36m\\"hi\\"[39m[31m[39m
 [31m+   }[39m",
       ],
-      "fullName": undefined,
-      "numPassingAsserts": 1,
+      "fullName": "",
+      "numPassingAsserts": 0,
       "status": "failed",
       "title": "",
     },
   ],
+  "v8Coverage": undefined,
 }
 `;
 
 exports[`jest-runner-prettier JSON good fixture matches snapshot 1`] = `
 Object {
-  "console": null,
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
   "failureMessage": undefined,
+  "leaks": false,
+  "memoryUsage": undefined,
   "numFailingTests": 0,
   "numPassingTests": 1,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "skipped": undefined,
+  "openHandles": Array [],
+  "skipped": false,
   "snapshot": Object {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
+    "uncheckedKeys": Array [],
     "unmatched": 0,
     "updated": 0,
   },
-  "sourceMaps": Object {},
-  "testExecError": null,
+  "testExecError": undefined,
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
+      "failureDetails": Array [],
       "failureMessages": Array [],
-      "fullName": undefined,
-      "numPassingAsserts": 0,
+      "fullName": "",
+      "numPassingAsserts": 1,
       "status": "passed",
       "title": "",
     },
   ],
+  "v8Coverage": undefined,
 }
 `;
 
 exports[`jest-runner-prettier JSX bad fixture matches snapshot 1`] = `
 Object {
-  "console": null,
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
   "failureMessage": "[32m- Expected[39m
 [31m+ Received[39m
 
@@ -171,24 +187,28 @@ Object {
 [32m-   );[39m
 [2m  }[22m
 [32m-[39m",
+  "leaks": false,
+  "memoryUsage": undefined,
   "numFailingTests": 1,
   "numPassingTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "skipped": undefined,
+  "openHandles": Array [],
+  "skipped": false,
   "snapshot": Object {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
+    "uncheckedKeys": Array [],
     "unmatched": 0,
     "updated": 0,
   },
-  "sourceMaps": Object {},
-  "testExecError": null,
+  "testExecError": undefined,
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
+      "failureDetails": Array [],
       "failureMessages": Array [
         "[32m- Expected[39m
 [31m+ Received[39m
@@ -247,43 +267,51 @@ Object {
 [2m  }[22m
 [32m-[39m",
       ],
-      "fullName": undefined,
-      "numPassingAsserts": 1,
+      "fullName": "",
+      "numPassingAsserts": 0,
       "status": "failed",
       "title": "",
     },
   ],
+  "v8Coverage": undefined,
 }
 `;
 
 exports[`jest-runner-prettier JSX good fixture matches snapshot 1`] = `
 Object {
-  "console": null,
+  "console": undefined,
+  "coverage": undefined,
+  "displayName": undefined,
   "failureMessage": undefined,
+  "leaks": false,
+  "memoryUsage": undefined,
   "numFailingTests": 0,
   "numPassingTests": 1,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "skipped": undefined,
+  "openHandles": Array [],
+  "skipped": false,
   "snapshot": Object {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
+    "uncheckedKeys": Array [],
     "unmatched": 0,
     "updated": 0,
   },
-  "sourceMaps": Object {},
-  "testExecError": null,
+  "testExecError": undefined,
   "testResults": Array [
     Object {
       "ancestorTitles": Array [],
+      "failureDetails": Array [],
       "failureMessages": Array [],
-      "fullName": undefined,
-      "numPassingAsserts": 0,
+      "fullName": "",
+      "numPassingAsserts": 1,
       "status": "passed",
       "title": "",
     },
   ],
+  "v8Coverage": undefined,
 }
 `;

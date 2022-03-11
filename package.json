@@ -25,11 +25,9 @@
     "verifyConditions": "@semantic-release/github"
   },
   "dependencies": {
-    "create-jest-runner": "^0.8.0",
+    "create-lite-jest-runner": "^1.0.2",
     "emphasize": "^5.0.0",
-    "jest-diff": "^27.0.0",
-    "jest-runner": "^27.5.1",
-    "p-limit": "^4.0.0"
+    "jest-diff": "^27.0.0"
   },
   "peerDependencies": {
     "jest": ">= 27.0.0",

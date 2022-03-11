@@ -1,6 +1,6 @@
 import { TestResult } from "@jest/test-result";
 import { emphasize } from "emphasize";
-import { pass, fail } from "create-jest-runner";
+import { pass, fail } from "create-lite-jest-runner";
 import * as fs from "node:fs/promises";
 import { diff } from "jest-diff";
 import prettier from "prettier";
@@ -41,7 +41,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
         {
           expand: false,
         }
-      ),
+      ) as string | undefined,
     },
   });
 };
