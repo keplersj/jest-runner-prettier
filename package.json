@@ -34,8 +34,8 @@
     "prettier": ">= 1.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
     "@types/jest": "28.1.8",
     "@types/node": "18.11.8",
     "eslint": "8.26.0",
