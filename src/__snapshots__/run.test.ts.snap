@@ -126,6 +126,28 @@ Object {
 }
 `;
 
+exports[`jest-runner-prettier JSON ignored fixture matches snapshot 1`] = `
+{
+  "leaks": false,
+  "numFailingTests": 0,
+  "numPassingTests": 0,
+  "numPendingTests": 1,
+  "numTodoTests": 0,
+  "openHandles": [],
+  "skipped": true,
+  "snapshot": {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "uncheckedKeys": [],
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "testResults": [],
+}
+`;
+
 exports[`jest-runner-prettier JSX bad fixture matches snapshot 1`] = `
 Object {
   "console": undefined,

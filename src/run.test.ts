@@ -36,6 +36,15 @@ describe("jest-runner-prettier", () => {
         }).then((result) => expect(result).toMatchSnapshot());
       });
     });
+
+    describe("ignored fixture", () => {
+      it("matches snapshot", () => {
+        return run({
+          testPath: path.join(__dirname, "__fixtures__", `ignored.json`),
+          ignorePath: path.join(__dirname, "__fixtures__", "prettierignore")
+        }).then((result) => expect(result).toMatchSnapshot());
+      });
+    })
   });
 
   describe("JSX", () => {
