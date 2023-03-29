@@ -10,9 +10,14 @@ interface Parameters {
   ignorePath?: string;
 }
 
-export default async ({ testPath, ignorePath }: Parameters): Promise<TestResult> => {
+export default async ({
+  testPath,
+  ignorePath,
+}: Parameters): Promise<TestResult> => {
   const start = Date.now();
-  const fileInfo = await prettier.getFileInfo(testPath, { ignorePath });
+  const fileInfo = await prettier.getFileInfo(testPath, {
+    ignorePath: ignorePath ?? ".prettierignore",
+  });
 
   if (fileInfo.ignored) {
     const end = Date.now();
@@ -40,7 +45,17 @@ export default async ({ testPath, ignorePath }: Parameters): Promise<TestResult>
         updated: 0,
       },
       testFilePath: testPath,
-      testResults: [],
+      testResults: [
+        {
+          title: "prettier",
+          status: "skipped",
+          ancestorTitles: [],
+          failureDetails: [],
+          failureMessages: [],
+          fullName: "prettier",
+          numPassingAsserts: 0,
+        },
+      ],
     };
   }
 

@@ -41,10 +41,10 @@ describe("jest-runner-prettier", () => {
       it("matches snapshot", () => {
         return run({
           testPath: path.join(__dirname, "__fixtures__", `ignored.json`),
-          ignorePath: path.join(__dirname, "__fixtures__", "prettierignore")
+          ignorePath: path.join(__dirname, "__fixtures__", "prettierignore"),
         }).then((result) => expect(result).toMatchSnapshot());
       });
-    })
+    });
   });
 
   describe("JSX", () => {
