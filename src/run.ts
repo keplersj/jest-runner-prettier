@@ -67,7 +67,7 @@ export default async ({
     filepath: testPath,
   };
 
-  const isPretty = prettier.check(contents, prettierConfig);
+  const isPretty = await prettier.check(contents, prettierConfig);
   if (isPretty) {
     return pass({
       start,
@@ -76,7 +76,7 @@ export default async ({
     });
   }
 
-  const formatted = prettier.format(contents, prettierConfig);
+  const formatted = await prettier.format(contents, prettierConfig);
 
   return fail({
     start,
