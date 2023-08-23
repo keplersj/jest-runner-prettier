@@ -19,7 +19,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
     filepath: testPath,
   };
 
-  const isPretty = prettier.check(contents, prettierConfig);
+  const isPretty = await prettier.check(contents, prettierConfig);
   if (isPretty) {
     return pass({
       start,
@@ -28,7 +28,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
     });
   }
 
-  const formatted = prettier.format(contents, prettierConfig);
+  const formatted = await prettier.format(contents, prettierConfig);
 
   return fail({
     start,
@@ -40,7 +40,7 @@ export default async ({ testPath }: Parameters): Promise<TestResult> => {
         emphasize.highlightAuto(contents).value,
         {
           expand: false,
-        }
+        },
       ) as string | undefined,
     },
   });

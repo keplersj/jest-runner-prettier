@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`jest-runner-prettier JSON bad fixture matches snapshot 1`] = `
-Object {
+{
   "console": undefined,
   "coverage": undefined,
   "displayName": undefined,
@@ -9,25 +9,25 @@ Object {
 [31m+ Received[39m
 
 [32m- {[39m
-[32m-   [33m\\"ohMyGodLongArray\\"[39m[32m: [[39m
-[32m-     [36m\\"prettyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"decentlyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"prettyDecentlyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"wowWowWowWhatALongValue\\"[39m[32m[39m
+[32m-   [33m"ohMyGodLongArray"[39m[32m: [[39m
+[32m-     [36m"prettyLongValue"[39m[32m,[39m
+[32m-     [36m"decentlyLongValue"[39m[32m,[39m
+[32m-     [36m"prettyDecentlyLongValue"[39m[32m,[39m
+[32m-     [36m"wowWowWowWhatALongValue"[39m[32m[39m
 [32m-   ],[39m
-[32m-   [33m\\"woahThisObjectIsDisapperingOffTheScreen\\"[39m[32m: {[39m
-[32m-     [33m\\"foo\\"[39m[32m: [36m\\"bar\\"[39m[32m,[39m
-[32m-     [33m\\"bar\\"[39m[32m: [36m\\"foo\\"[39m[32m,[39m
-[32m-     [33m\\"faz\\"[39m[32m: [32mfalse[39m[32m[39m
+[32m-   [33m"woahThisObjectIsDisapperingOffTheScreen"[39m[32m: {[39m
+[32m-     [33m"foo"[39m[32m: [36m"bar"[39m[32m,[39m
+[32m-     [33m"bar"[39m[32m: [36m"foo"[39m[32m,[39m
+[32m-     [33m"faz"[39m[32m: [32mfalse[39m[32m[39m
 [32m-   },[39m
-[32m-   [33m\\"truthy\\"[39m[32m: [32mtrue[39m[32m,[39m
-[32m-   [33m\\"aNumber\\"[39m[32m: [36m123[39m[32m,[39m
-[32m-   [33m\\"aString\\"[39m[32m: [36m\\"hi\\"[39m[32m[39m
+[32m-   [33m"truthy"[39m[32m: [32mtrue[39m[32m,[39m
+[32m-   [33m"aNumber"[39m[32m: [36m123[39m[32m,[39m
+[32m-   [33m"aString"[39m[32m: [36m"hi"[39m[32m[39m
 [32m- }[39m
 [32m-[39m
-[31m+ {[33m\\"ohMyGodLongArray\\"[39m[31m: [[36m\\"prettyLongValue\\"[39m[31m, [36m\\"decentlyLongValue\\"[39m[31m,[39m
-[31m+   [36m\\"prettyDecentlyLongValue\\"[39m[31m, [36m\\"wowWowWowWhatALongValue\\"[39m[31m], [33m\\"woahThisObjectIsDisapperingOffTheScreen\\"[39m[31m: {[33m\\"foo\\"[39m[31m: [36m\\"bar\\"[39m[31m,[39m
-[31m+     [33m\\"bar\\"[39m[31m: [36m\\"foo\\"[39m[31m, [33m\\"faz\\"[39m[31m: [32mfalse[39m[31m}, [33m\\"truthy\\"[39m[31m: [32mtrue[39m[31m, [33m\\"aNumber\\"[39m[31m: [36m123[39m[31m, [33m\\"aString\\"[39m[31m: [36m\\"hi\\"[39m[31m[39m
+[31m+ {[33m"ohMyGodLongArray"[39m[31m: [[36m"prettyLongValue"[39m[31m, [36m"decentlyLongValue"[39m[31m,[39m
+[31m+   [36m"prettyDecentlyLongValue"[39m[31m, [36m"wowWowWowWhatALongValue"[39m[31m], [33m"woahThisObjectIsDisapperingOffTheScreen"[39m[31m: {[33m"foo"[39m[31m: [36m"bar"[39m[31m,[39m
+[31m+     [33m"bar"[39m[31m: [36m"foo"[39m[31m, [33m"faz"[39m[31m: [32mfalse[39m[31m}, [33m"truthy"[39m[31m: [32mtrue[39m[31m, [33m"aNumber"[39m[31m: [36m123[39m[31m, [33m"aString"[39m[31m: [36m"hi"[39m[31m[39m
 [31m+   }[39m",
   "leaks": false,
   "memoryUsage": undefined,
@@ -35,46 +35,46 @@ Object {
   "numPassingTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "openHandles": Array [],
+  "openHandles": [],
   "skipped": false,
-  "snapshot": Object {
+  "snapshot": {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
-    "uncheckedKeys": Array [],
+    "uncheckedKeys": [],
     "unmatched": 0,
     "updated": 0,
   },
   "testExecError": undefined,
-  "testResults": Array [
-    Object {
-      "ancestorTitles": Array [],
-      "failureDetails": Array [],
-      "failureMessages": Array [
+  "testResults": [
+    {
+      "ancestorTitles": [],
+      "failureDetails": [],
+      "failureMessages": [
         "[32m- Expected[39m
 [31m+ Received[39m
 
 [32m- {[39m
-[32m-   [33m\\"ohMyGodLongArray\\"[39m[32m: [[39m
-[32m-     [36m\\"prettyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"decentlyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"prettyDecentlyLongValue\\"[39m[32m,[39m
-[32m-     [36m\\"wowWowWowWhatALongValue\\"[39m[32m[39m
+[32m-   [33m"ohMyGodLongArray"[39m[32m: [[39m
+[32m-     [36m"prettyLongValue"[39m[32m,[39m
+[32m-     [36m"decentlyLongValue"[39m[32m,[39m
+[32m-     [36m"prettyDecentlyLongValue"[39m[32m,[39m
+[32m-     [36m"wowWowWowWhatALongValue"[39m[32m[39m
 [32m-   ],[39m
-[32m-   [33m\\"woahThisObjectIsDisapperingOffTheScreen\\"[39m[32m: {[39m
-[32m-     [33m\\"foo\\"[39m[32m: [36m\\"bar\\"[39m[32m,[39m
-[32m-     [33m\\"bar\\"[39m[32m: [36m\\"foo\\"[39m[32m,[39m
-[32m-     [33m\\"faz\\"[39m[32m: [32mfalse[39m[32m[39m
+[32m-   [33m"woahThisObjectIsDisapperingOffTheScreen"[39m[32m: {[39m
+[32m-     [33m"foo"[39m[32m: [36m"bar"[39m[32m,[39m
+[32m-     [33m"bar"[39m[32m: [36m"foo"[39m[32m,[39m
+[32m-     [33m"faz"[39m[32m: [32mfalse[39m[32m[39m
 [32m-   },[39m
-[32m-   [33m\\"truthy\\"[39m[32m: [32mtrue[39m[32m,[39m
-[32m-   [33m\\"aNumber\\"[39m[32m: [36m123[39m[32m,[39m
-[32m-   [33m\\"aString\\"[39m[32m: [36m\\"hi\\"[39m[32m[39m
+[32m-   [33m"truthy"[39m[32m: [32mtrue[39m[32m,[39m
+[32m-   [33m"aNumber"[39m[32m: [36m123[39m[32m,[39m
+[32m-   [33m"aString"[39m[32m: [36m"hi"[39m[32m[39m
 [32m- }[39m
 [32m-[39m
-[31m+ {[33m\\"ohMyGodLongArray\\"[39m[31m: [[36m\\"prettyLongValue\\"[39m[31m, [36m\\"decentlyLongValue\\"[39m[31m,[39m
-[31m+   [36m\\"prettyDecentlyLongValue\\"[39m[31m, [36m\\"wowWowWowWhatALongValue\\"[39m[31m], [33m\\"woahThisObjectIsDisapperingOffTheScreen\\"[39m[31m: {[33m\\"foo\\"[39m[31m: [36m\\"bar\\"[39m[31m,[39m
-[31m+     [33m\\"bar\\"[39m[31m: [36m\\"foo\\"[39m[31m, [33m\\"faz\\"[39m[31m: [32mfalse[39m[31m}, [33m\\"truthy\\"[39m[31m: [32mtrue[39m[31m, [33m\\"aNumber\\"[39m[31m: [36m123[39m[31m, [33m\\"aString\\"[39m[31m: [36m\\"hi\\"[39m[31m[39m
+[31m+ {[33m"ohMyGodLongArray"[39m[31m: [[36m"prettyLongValue"[39m[31m, [36m"decentlyLongValue"[39m[31m,[39m
+[31m+   [36m"prettyDecentlyLongValue"[39m[31m, [36m"wowWowWowWhatALongValue"[39m[31m], [33m"woahThisObjectIsDisapperingOffTheScreen"[39m[31m: {[33m"foo"[39m[31m: [36m"bar"[39m[31m,[39m
+[31m+     [33m"bar"[39m[31m: [36m"foo"[39m[31m, [33m"faz"[39m[31m: [32mfalse[39m[31m}, [33m"truthy"[39m[31m: [32mtrue[39m[31m, [33m"aNumber"[39m[31m: [36m123[39m[31m, [33m"aString"[39m[31m: [36m"hi"[39m[31m[39m
 [31m+   }[39m",
       ],
       "fullName": "",
@@ -88,7 +88,7 @@ Object {
 `;
 
 exports[`jest-runner-prettier JSON good fixture matches snapshot 1`] = `
-Object {
+{
   "console": undefined,
   "coverage": undefined,
   "displayName": undefined,
@@ -99,23 +99,23 @@ Object {
   "numPassingTests": 1,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "openHandles": Array [],
+  "openHandles": [],
   "skipped": false,
-  "snapshot": Object {
+  "snapshot": {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
-    "uncheckedKeys": Array [],
+    "uncheckedKeys": [],
     "unmatched": 0,
     "updated": 0,
   },
   "testExecError": undefined,
-  "testResults": Array [
-    Object {
-      "ancestorTitles": Array [],
-      "failureDetails": Array [],
-      "failureMessages": Array [],
+  "testResults": [
+    {
+      "ancestorTitles": [],
+      "failureDetails": [],
+      "failureMessages": [],
       "fullName": "",
       "numPassingAsserts": 1,
       "status": "passed",
@@ -127,7 +127,7 @@ Object {
 `;
 
 exports[`jest-runner-prettier JSX bad fixture matches snapshot 1`] = `
-Object {
+{
   "console": undefined,
   "coverage": undefined,
   "displayName": undefined,
@@ -135,54 +135,54 @@ Object {
 [31m+ Received[39m
 
 [32m- [32mfunction[39m[32m [34mHelloWorld[39m[32m({[39m
-[32m-   greeting = [36m\\"hello\\"[39m[32m,[39m
-[32m-   greeted = [36m'\\"World\\"'[39m[32m,[39m
+[32m-   greeting = [36m"hello"[39m[32m,[39m
+[32m-   greeted = [36m'"World"'[39m[32m,[39m
 [32m-   silent = [36mfalse[39m[32m,[39m
 [32m-   onMouseOver,[39m
 [32m- }) {[39m
 [32m-   [32mif[39m[32m (!greeting) {[39m
 [32m-     [32mreturn[39m[32m [36mnull[39m[32m;[39m
 [32m-   }[39m
-[31m+ [32mfunction[39m[31m [34mHelloWorld[39m[31m({greeting = [36m\\"hello\\"[39m[31m, greeted = [36m'\\"World\\"'[39m[31m, silent = [36mfalse[39m[31m, onMouseOver,}) {[39m
+[31m+ [32mfunction[39m[31m [34mHelloWorld[39m[31m({greeting = [36m"hello"[39m[31m, greeted = [36m'"World"'[39m[31m, silent = [36mfalse[39m[31m, onMouseOver,}) {[39m
 [31m+[39m
 [31m+   [32mif[39m[31m(!greeting){[32mreturn[39m[31m [36mnull[39m[31m};[39m
 [31m+[39m
 [31m+      [90m// [36mTODO:[39m[31m[90m Don't use random in render[39m[31m[39m
-[31m+   [32mlet[39m[31m num = [34mMath[39m[31m.floor ([34mMath[39m[31m.[34mrandom[39m[31m() * [36m1E+7[39m[31m).[34mtoString[39m[31m().[34mreplace[39m[31m([36m/\\\\.\\\\d+/ig[39m[31m, [36m\\"\\"[39m[31m)[39m
+[31m+   [32mlet[39m[31m num = [34mMath[39m[31m.floor ([34mMath[39m[31m.[34mrandom[39m[31m() * [36m1E+7[39m[31m).[34mtoString[39m[31m().[34mreplace[39m[31m([36m/\\.\\d+/ig[39m[31m, [36m""[39m[31m)[39m
 [31m+[39m
 [31m+   [32mreturn[39m[31m <[34mdiv[39m[31m [33mclassName[39m[31m=[36m'HelloWorld'[39m[31m [33mtitle[39m[31m=[36m{[39m[31m\`[33mYou[39m[31m [33mare[39m[31m [33mvisitor[39m[31m [33mnumber[39m[31m \${ [33mnum[39m[31m }\`} [33monMouseOver[39m[31m=[36m{onMouseOver}[39m[31m>[39m
 [31m+[39m
 [31m+     <[34mstrong[39m[31m>{ greeting.slice( 0, 1 ).toUpperCase() + greeting.slice(1).toLowerCase() }</[34mstrong[39m[31m>[39m
-[31m+     {greeting.endsWith(\\",\\") ? \\" \\" : <[34mspan[39m[31m [33mstyle[39m[31m=[36m{{color:[39m[31m '\\\\[33mgrey[39m[31m'}}>\\", \\"</[34mspan[39m[31m> }[39m
+[31m+     {greeting.endsWith(",") ? " " : <[34mspan[39m[31m [33mstyle[39m[31m=[36m{{color:[39m[31m '\\[33mgrey[39m[31m'}}>", "</[34mspan[39m[31m> }[39m
 [31m+     <[34mem[39m[31m>[39m
 [31m+ 	{ greeted }[39m
 [31m+ 	</[34mem[39m[31m>[39m
 [31m+     { (silent)[39m
-[31m+       ? \\".\\"[39m
-[31m+       : \\"!\\"}[39m
+[31m+       ? "."[39m
+[31m+       : "!"}[39m
 
 [32m-   [90m// [36mTODO:[39m[32m[90m Don't use random in render[39m[32m[39m
 [32m-   [32mlet[39m[32m num = [34mMath[39m[32m.[34mfloor[39m[32m([34mMath[39m[32m.[34mrandom[39m[32m() * [36m1e7[39m[32m)[39m
 [32m-     .[34mtoString[39m[32m()[39m
-[32m-     .[34mreplace[39m[32m([36m/\\\\.\\\\d+/gi[39m[32m, [36m\\"\\"[39m[32m);[39m
+[32m-     .[34mreplace[39m[32m([36m/\\.\\d+/gi[39m[32m, [36m""[39m[32m);[39m
 [31m+     </[34mdiv[39m[31m>;[39m
 
 [32m-   [32mreturn[39m[32m ([39m
 [32m-     <[34mdiv[39m[32m[39m
-[32m-       [33mclassName[39m[32m=[36m\\"HelloWorld\\"[39m[32m[39m
+[32m-       [33mclassName[39m[32m=[36m"HelloWorld"[39m[32m[39m
 [32m-       [33mtitle[39m[32m=[36m{[39m[32m\`[33mYou[39m[32m [33mare[39m[32m [33mvisitor[39m[32m [33mnumber[39m[32m \${[33mnum[39m[32m}\`}[39m
 [32m-       [33monMouseOver[39m[32m=[36m{onMouseOver}[39m[32m[39m
 [32m-     >[39m
 [32m-       <[34mstrong[39m[32m>[39m
 [32m-         {greeting.slice(0, 1).toUpperCase() + greeting.slice(1).toLowerCase()}[39m
 [32m-       </[34mstrong[39m[32m>[39m
-[32m-       {greeting.endsWith(\\",\\") ? ([39m
-[32m-         \\" \\"[39m
+[32m-       {greeting.endsWith(",") ? ([39m
+[32m-         " "[39m
 [32m-       ) : ([39m
-[32m-         <[34mspan[39m[32m [33mstyle[39m[32m=[36m{{[39m[32m [33mcolor:[39m[32m \\"[33mgrey[39m[32m\\" }}>\\", \\"</[34mspan[39m[32m>[39m
+[32m-         <[34mspan[39m[32m [33mstyle[39m[32m=[36m{{[39m[32m [33mcolor:[39m[32m "[33mgrey[39m[32m" }}>", "</[34mspan[39m[32m>[39m
 [32m-       )}[39m
 [32m-       <[34mem[39m[32m>{greeted}</[34mem[39m[32m>[39m
-[32m-       {silent ? \\".\\" : \\"!\\"}[39m
+[32m-       {silent ? "." : "!"}[39m
 [32m-     </[34mdiv[39m[32m>[39m
 [32m-   );[39m
 [2m  }[22m
@@ -193,75 +193,75 @@ Object {
   "numPassingTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "openHandles": Array [],
+  "openHandles": [],
   "skipped": false,
-  "snapshot": Object {
+  "snapshot": {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
-    "uncheckedKeys": Array [],
+    "uncheckedKeys": [],
     "unmatched": 0,
     "updated": 0,
   },
   "testExecError": undefined,
-  "testResults": Array [
-    Object {
-      "ancestorTitles": Array [],
-      "failureDetails": Array [],
-      "failureMessages": Array [
+  "testResults": [
+    {
+      "ancestorTitles": [],
+      "failureDetails": [],
+      "failureMessages": [
         "[32m- Expected[39m
 [31m+ Received[39m
 
 [32m- [32mfunction[39m[32m [34mHelloWorld[39m[32m({[39m
-[32m-   greeting = [36m\\"hello\\"[39m[32m,[39m
-[32m-   greeted = [36m'\\"World\\"'[39m[32m,[39m
+[32m-   greeting = [36m"hello"[39m[32m,[39m
+[32m-   greeted = [36m'"World"'[39m[32m,[39m
 [32m-   silent = [36mfalse[39m[32m,[39m
 [32m-   onMouseOver,[39m
 [32m- }) {[39m
 [32m-   [32mif[39m[32m (!greeting) {[39m
 [32m-     [32mreturn[39m[32m [36mnull[39m[32m;[39m
 [32m-   }[39m
-[31m+ [32mfunction[39m[31m [34mHelloWorld[39m[31m({greeting = [36m\\"hello\\"[39m[31m, greeted = [36m'\\"World\\"'[39m[31m, silent = [36mfalse[39m[31m, onMouseOver,}) {[39m
+[31m+ [32mfunction[39m[31m [34mHelloWorld[39m[31m({greeting = [36m"hello"[39m[31m, greeted = [36m'"World"'[39m[31m, silent = [36mfalse[39m[31m, onMouseOver,}) {[39m
 [31m+[39m
 [31m+   [32mif[39m[31m(!greeting){[32mreturn[39m[31m [36mnull[39m[31m};[39m
 [31m+[39m
 [31m+      [90m// [36mTODO:[39m[31m[90m Don't use random in render[39m[31m[39m
-[31m+   [32mlet[39m[31m num = [34mMath[39m[31m.floor ([34mMath[39m[31m.[34mrandom[39m[31m() * [36m1E+7[39m[31m).[34mtoString[39m[31m().[34mreplace[39m[31m([36m/\\\\.\\\\d+/ig[39m[31m, [36m\\"\\"[39m[31m)[39m
+[31m+   [32mlet[39m[31m num = [34mMath[39m[31m.floor ([34mMath[39m[31m.[34mrandom[39m[31m() * [36m1E+7[39m[31m).[34mtoString[39m[31m().[34mreplace[39m[31m([36m/\\.\\d+/ig[39m[31m, [36m""[39m[31m)[39m
 [31m+[39m
 [31m+   [32mreturn[39m[31m <[34mdiv[39m[31m [33mclassName[39m[31m=[36m'HelloWorld'[39m[31m [33mtitle[39m[31m=[36m{[39m[31m\`[33mYou[39m[31m [33mare[39m[31m [33mvisitor[39m[31m [33mnumber[39m[31m \${ [33mnum[39m[31m }\`} [33monMouseOver[39m[31m=[36m{onMouseOver}[39m[31m>[39m
 [31m+[39m
 [31m+     <[34mstrong[39m[31m>{ greeting.slice( 0, 1 ).toUpperCase() + greeting.slice(1).toLowerCase() }</[34mstrong[39m[31m>[39m
-[31m+     {greeting.endsWith(\\",\\") ? \\" \\" : <[34mspan[39m[31m [33mstyle[39m[31m=[36m{{color:[39m[31m '\\\\[33mgrey[39m[31m'}}>\\", \\"</[34mspan[39m[31m> }[39m
+[31m+     {greeting.endsWith(",") ? " " : <[34mspan[39m[31m [33mstyle[39m[31m=[36m{{color:[39m[31m '\\[33mgrey[39m[31m'}}>", "</[34mspan[39m[31m> }[39m
 [31m+     <[34mem[39m[31m>[39m
 [31m+ 	{ greeted }[39m
 [31m+ 	</[34mem[39m[31m>[39m
 [31m+     { (silent)[39m
-[31m+       ? \\".\\"[39m
-[31m+       : \\"!\\"}[39m
+[31m+       ? "."[39m
+[31m+       : "!"}[39m
 
 [32m-   [90m// [36mTODO:[39m[32m[90m Don't use random in render[39m[32m[39m
 [32m-   [32mlet[39m[32m num = [34mMath[39m[32m.[34mfloor[39m[32m([34mMath[39m[32m.[34mrandom[39m[32m() * [36m1e7[39m[32m)[39m
 [32m-     .[34mtoString[39m[32m()[39m
-[32m-     .[34mreplace[39m[32m([36m/\\\\.\\\\d+/gi[39m[32m, [36m\\"\\"[39m[32m);[39m
+[32m-     .[34mreplace[39m[32m([36m/\\.\\d+/gi[39m[32m, [36m""[39m[32m);[39m
 [31m+     </[34mdiv[39m[31m>;[39m
 
 [32m-   [32mreturn[39m[32m ([39m
 [32m-     <[34mdiv[39m[32m[39m
-[32m-       [33mclassName[39m[32m=[36m\\"HelloWorld\\"[39m[32m[39m
+[32m-       [33mclassName[39m[32m=[36m"HelloWorld"[39m[32m[39m
 [32m-       [33mtitle[39m[32m=[36m{[39m[32m\`[33mYou[39m[32m [33mare[39m[32m [33mvisitor[39m[32m [33mnumber[39m[32m \${[33mnum[39m[32m}\`}[39m
 [32m-       [33monMouseOver[39m[32m=[36m{onMouseOver}[39m[32m[39m
 [32m-     >[39m
 [32m-       <[34mstrong[39m[32m>[39m
 [32m-         {greeting.slice(0, 1).toUpperCase() + greeting.slice(1).toLowerCase()}[39m
 [32m-       </[34mstrong[39m[32m>[39m
-[32m-       {greeting.endsWith(\\",\\") ? ([39m
-[32m-         \\" \\"[39m
+[32m-       {greeting.endsWith(",") ? ([39m
+[32m-         " "[39m
 [32m-       ) : ([39m
-[32m-         <[34mspan[39m[32m [33mstyle[39m[32m=[36m{{[39m[32m [33mcolor:[39m[32m \\"[33mgrey[39m[32m\\" }}>\\", \\"</[34mspan[39m[32m>[39m
+[32m-         <[34mspan[39m[32m [33mstyle[39m[32m=[36m{{[39m[32m [33mcolor:[39m[32m "[33mgrey[39m[32m" }}>", "</[34mspan[39m[32m>[39m
 [32m-       )}[39m
 [32m-       <[34mem[39m[32m>{greeted}</[34mem[39m[32m>[39m
-[32m-       {silent ? \\".\\" : \\"!\\"}[39m
+[32m-       {silent ? "." : "!"}[39m
 [32m-     </[34mdiv[39m[32m>[39m
 [32m-   );[39m
 [2m  }[22m
@@ -278,7 +278,7 @@ Object {
 `;
 
 exports[`jest-runner-prettier JSX good fixture matches snapshot 1`] = `
-Object {
+{
   "console": undefined,
   "coverage": undefined,
   "displayName": undefined,
@@ -289,23 +289,23 @@ Object {
   "numPassingTests": 1,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "openHandles": Array [],
+  "openHandles": [],
   "skipped": false,
-  "snapshot": Object {
+  "snapshot": {
     "added": 0,
     "fileDeleted": false,
     "matched": 0,
     "unchecked": 0,
-    "uncheckedKeys": Array [],
+    "uncheckedKeys": [],
     "unmatched": 0,
     "updated": 0,
   },
   "testExecError": undefined,
-  "testResults": Array [
-    Object {
-      "ancestorTitles": Array [],
-      "failureDetails": Array [],
-      "failureMessages": Array [],
+  "testResults": [
+    {
+      "ancestorTitles": [],
+      "failureDetails": [],
+      "failureMessages": [],
       "fullName": "",
       "numPassingAsserts": 1,
       "status": "passed",
