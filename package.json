@@ -37,7 +37,7 @@
     "@commitlint/cli": "17.2.0",
     "@commitlint/config-conventional": "17.2.0",
     "@types/jest": "29.2.2",
-    "@types/node": "18.11.9",
+    "@types/node": "18.19.123",
     "eslint": "8.27.0",
     "eslint-config-starstuff": "1.5.14",
     "husky": "8.0.3",
